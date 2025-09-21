@@ -36,7 +36,9 @@ class SelctionCard extends StatelessWidget {
         itemCount: languages.length,
         itemBuilder: (context, index) {
           return GestureDetector(
-            onTap: (){},
+            onTap: (){
+              
+            },
             child: Card(
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(16),

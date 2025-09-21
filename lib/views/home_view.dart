@@ -9,7 +9,7 @@ class HomeView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Choose Language'),
-        backgroundColor: Colors.purple,
+        backgroundColor: Colors.grey,
       ),
       body: SelctionCard(),
     );
