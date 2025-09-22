@@ -1,6 +1,6 @@
-
 import 'package:country_flags/country_flags.dart';
 import 'package:flutter/material.dart';
+import 'package:laguageapp/views/home_main_view.dart';
 
 class SelctionCard extends StatelessWidget {
   SelctionCard({super.key});
@@ -36,8 +36,15 @@ class SelctionCard extends StatelessWidget {
         itemCount: languages.length,
         itemBuilder: (context, index) {
           return GestureDetector(
-            onTap: (){
-              
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return HomeMainView();
+                  },
+                ),
+              );
             },
             child: Card(
               shape: RoundedRectangleBorder(

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class HomeMainScreen extends StatelessWidget {
-  const HomeMainScreen({super.key});
+class GrammerView extends StatelessWidget {
+  const GrammerView({super.key});
 
   @override
   Widget build(BuildContext context) {
