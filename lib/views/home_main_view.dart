@@ -47,6 +47,7 @@ class _HomeMainViewState extends State<HomeMainView> {
         title: Text(appBarTitles[selctedIndex]),
         backgroundColor: colors[selctedIndex],
       ),
+      body: screens[selctedIndex],
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(10),
         child: GNav(
