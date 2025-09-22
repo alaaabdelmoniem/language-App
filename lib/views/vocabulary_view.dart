@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:laguageapp/widgets/custom_list_tile.dart';
 
 class VocabularyView extends StatelessWidget {
   const VocabularyView({super.key});
@@ -9,29 +10,34 @@ class VocabularyView extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          const CustomListTileVocab(),
-          const CustomListTileVocab(),
-          const CustomListTileVocab(),
-          const CustomListTileVocab(),
+          CustomListTile(
+            color: Colors.green.shade400,
+            title: Text(
+              "Apple = Manzana",
+              style: TextStyle(color: Colors.white),
+            ),
+            trallingIcon: Icon(Icons.volume_up, color: Colors.white),
+            leadingIcon: Icon(Icons.book, color: Colors.white),
+          ),
+          CustomListTile(
+            color: Colors.green.shade400,
+            title: Text(
+              "Apple = Manzana",
+              style: TextStyle(color: Colors.white),
+            ),
+            trallingIcon: Icon(Icons.volume_up, color: Colors.white),
+            leadingIcon: Icon(Icons.book, color: Colors.white),
+          ),
+          CustomListTile(
+            color: Colors.green.shade400,
+            title: Text(
+              "Apple = Manzana",
+              style: TextStyle(color: Colors.white),
+            ),
+            trallingIcon: Icon(Icons.volume_up, color: Colors.white),
+            leadingIcon: Icon(Icons.book, color: Colors.white),
+          ),
         ],
-      ),
-    );
-  }
-}
-
-class CustomListTileVocab extends StatelessWidget {
-  const CustomListTileVocab({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 8),
-      child: ListTile(
-        leading: Icon(Icons.book, color: Colors.white),
-        trailing: Icon(Icons.volume_up, color: Colors.white),
-        title: Text("Apple = Manzana", style: TextStyle(color: Colors.white)),
-        tileColor: Colors.green.shade400,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
       ),
     );
   }
