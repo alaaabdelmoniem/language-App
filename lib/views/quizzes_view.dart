@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class QuizView extends StatelessWidget {
-  const QuizView({super.key});
+class QuizzesView extends StatelessWidget {
+  const QuizzesView({super.key});
 
   @override
   Widget build(BuildContext context) {
