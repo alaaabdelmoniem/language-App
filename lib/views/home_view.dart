@@ -16,7 +16,7 @@ class HomeView extends StatelessWidget {
         options: CarouselOptions(
           height: 200,
           autoPlay: true,
-          autoPlayAnimationDuration: Duration(milliseconds: 500),
+          autoPlayAnimationDuration: Duration(milliseconds: 400),
           autoPlayCurve: Curves.easeInOut,
           enlargeCenterPage: true,
         ),
